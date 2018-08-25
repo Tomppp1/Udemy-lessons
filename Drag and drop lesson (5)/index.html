@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drag and drop</title>
+        <style>
+            #div1 {
+                width: 240px;
+                height: 240px;
+                padding: 10px;
+                border: 1px grey solid;
+                float: left;
+            }
+        </style>
+        <script type="text/javascript" src="modernizr-custom.js"></script>
+        <script type="text/javascript">
+        if(window.FileReader  )( Modernizr.draganddrop );{
+            function allowDrop(ev){
+                ev.preventDefault();
+            }
+            function drag(ev){
+                ev.dataTransfer.setData("Text",ev.target.id);
+            }
+            function drop(ev){
+            ev.preventDefoult();
+            var data=ev.dataTransfer.getData("Text");
+            ev.target.appendChild(Document.getElementById(data));
+            }
+         
+            
+     
+        }
+    
+        </script>
+    </head>
+    <body>
+        <h1>Drag the html5 logoo into box</h1>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <img id="drag1" src="htmlimg.png" draggable="true" ondragstart="DragEvent">
+    </body>
+</html>

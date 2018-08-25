@@ -1,0 +1,73 @@
+body{
+    background-color: darkblue;
+}
+.main{
+    float: left;
+    width: auto;
+}
+header{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    float:top;
+
+}
+h1{
+   font-size: 40px;
+    color: white;
+    background-color: black;
+    margin:0px;
+}
+h4{
+    padding: 5px;
+    background-color:#2658a9;
+    color: white; 
+}
+table{
+    border:  1px solid white;
+
+}
+th{
+    border: 1px solid white;
+    padding: 8px 30px 8px 30px;
+    color: white;
+}
+td{
+    border-bottom: 1px dotted white;
+    padding: 3px 10px 3px 10px;
+    color: white;
+}
+.table_2 table {
+border: none;
+
+}
+.table_2 td{
+    border-bottom:1px dashed white;
+    text-decoration: underline;
+}
+.list{
+    width: 200px;
+    height: 350px;
+    float: left;
+    background-color:#333333; 
+    padding: 0px 20px 0px 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.list h4{
+    color: white;
+}
+.list li{
+    color: white;
+}
+.list_2{
+    float: left;
+    background-color: bisque;
+    margin-left: 0px 20px 0px 20px;
+    width: 200px;
+    height: 350px;
+    text-align: center;
+}
+.list_2{
+    color: white;
+}
